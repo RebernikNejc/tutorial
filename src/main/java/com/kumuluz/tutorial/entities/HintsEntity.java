@@ -14,6 +14,7 @@ public class HintsEntity {
     private String content;
     private Integer status;
     private PageEntity pageByPage;
+    private String placement;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -103,5 +104,15 @@ public class HintsEntity {
 
     public void setPageByPage(PageEntity pageByPage) {
         this.pageByPage = pageByPage;
+    }
+
+    @Basic
+    @Column(name = "placement")
+    public String getPlacement() {
+        return placement;
+    }
+
+    public void setPlacement(String placement) {
+        this.placement = placement;
     }
 }
