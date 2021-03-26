@@ -15,6 +15,8 @@ public class HintsEntity {
     private Integer status;
     private PageEntity pageByPage;
     private String placement;
+    private Integer mode;
+    private String ref;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -114,5 +116,25 @@ public class HintsEntity {
 
     public void setPlacement(String placement) {
         this.placement = placement;
+    }
+
+    @Basic
+    @Column(name = "mode")
+    public Integer getMode() {
+        return mode;
+    }
+
+    public void setMode(Integer mode) {
+        this.mode = mode;
+    }
+
+    @Basic
+    @Column(name = "ref")
+    public String getRef() {
+        return ref;
+    }
+
+    public void setRef(String ref) {
+        this.ref = ref;
     }
 }
