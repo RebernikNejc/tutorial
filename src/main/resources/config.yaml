@@ -2,8 +2,8 @@ kumuluzee:
   datasources:
     - jndi-name: jdbc/TutorialDS
       connection-url: jdbc:postgresql://ec2-54-228-174-49.eu-west-1.compute.amazonaws.com:5432/d9fksifgpu2qos
-      username: fstvxjfztyogkv
-      password: 407b0c48f98353f564be505fd9b347df7122257c23aac3ba72d44f5a8d6f5141
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
       pool:
         max-size: 5
   persistence-units:
